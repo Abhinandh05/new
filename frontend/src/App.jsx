@@ -7,6 +7,9 @@ import Signup from './components/Signup'
 import Home from './components/Home'
 import { Job } from '../../backend/models/job.model'
 import Jobs from './components/Jobs'
+import GetCompany from './components/admin/GetCompany'
+import RegisterCompany from './components/admin/RegisterCompany'
+import CompanyDetails from './components/admin/CompanyDetails'
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<Signup/>} />
           <Route path="/jobs" element={<Jobs/>} />
+          <Route path="/admin/companies" element={<GetCompany/>} />
+          <Route path="/admin/companies/register" element={<RegisterCompany/>} />
+          <Route path="/admin/companies/:id" element={<CompanyDetails/>} />
         </Routes>
       </div>
     </>
