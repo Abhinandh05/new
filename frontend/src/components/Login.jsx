@@ -54,7 +54,7 @@ const Login = () => {
       
       // Redirect based on role
       if (response.data.user.role === 'recruiter') {
-        window.location.href = '/recruiter-dashboard';
+        window.location.href = '/admin/companies';
       } else if (response.data.user.role === 'student') {
         window.location.href = '/';
       }
